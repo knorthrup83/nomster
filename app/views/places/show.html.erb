@@ -76,7 +76,7 @@
     <div class="col-12 col-sm-6">
       <blockquote>
         <% if comment.humanized_rating.present? %>
-          <b><%= comment.rating %></b> -
+          <b><%= comment.humanized_rating %></b> -
         <% end %>
         <%= comment.message %>
         <small><%= comment.user.email %></small>
