@@ -85,6 +85,18 @@
   <% end %>
 </div>
 
+<br /><br />
+
+<div class="col-10 offset-1">
+  <h1 class="float-left">Photos</h1>
+</div>
+
+  <div class="clear"></div>
+
+<% @place.photos.each do |photo| %>
+  <b><%= photo.caption %></b>
+<% end %>
+
 
 <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
 <%= f.input :caption %>
