@@ -1,6 +1,6 @@
 class Comment < ApplicationRecord
   belongs_to :user
-  belongs_to :places
+  belongs_to :place
 
   RATINGS = {
   	'One Star': '1_star',

@@ -94,7 +94,9 @@
   <div class="clear"></div>
 
 <% @place.photos.each do |photo| %>
-  <b><%= photo.caption %></b>
+  <div class="col-12 col-sm-6">
+    <b><%= photo.caption %></b>
+  </div>
 <% end %>
 
 
