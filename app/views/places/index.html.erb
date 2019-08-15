@@ -11,8 +11,10 @@
 
 	<br />
 
-    <% if place.photos.first.picture.present? %>
-	<%= image_tag place.photos.first.picture.url, class: 'col-2' %>
+    <% if place.photos.any? %>
+    	<% if place.photos.first.picture.url != nil %>
+			<%= image_tag place.photos.first.picture.url, class: 'col-2' %>
+	<% end %>
 	<% end %>
 
 	<% if place.comments.present? %>
